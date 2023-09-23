@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Nikhil_Developer</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="preloader1"></div>
+    <header >
+        <!--<h1 class="logo">logo</h1>-->
+        <img src="NBFF/logo1.png" class="logo">
+        <nav class="navigation">
+            <!--<a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>-->
+            <button class="button-popup">Login</button>
+        
+             
+        </nav>
+    </header>
+    <img src="NBFF/bg.png" class="headerbg">
+    <div class="top">
+        <h2>GRIET / STUDENT / WEB DEVELOPER</h2>
+        <h1>N  I  K  H  I  L</h1>
+    </div>
+<div class="body1">
+    <img src="NBFF/Software-IT-Services-PNG-Clipart.png" class="image13" ><br>
+    <div class="info">
+        <h1><u>Web Development</u></h1>
+        <p>
+            Web development refers to the creating, building, and maintaining of websites.
+             It includes aspects such as web design, web publishing, web programming, and database management. 
+             It is the creation of an application that works over the internet i.e. websites.
+        </p><br>
+        <center><img src="NBFF/webdevelopment.jpg" class="image14"><br></center>
+        <p>The word Web Development is made up of two words,
+            that is:<br>
+
+                <li><b>WEB:</b> It refers to websites, web pages or anything that works over the internet.</li><br>
+                <li><b>DEVELOPMENT:</b> It refers to building the application from scratch.</li>
+            Web Development can be classified into two ways:
+            <li>Frontend Development</li>
+            <li>Backend Development</li></p>
+           <p> Technology plays a huge role in our daily lives, from the simplest of apps to the most groundbreaking inventions.
+                Every website or piece of software that we encounter has been built by a developer.
+            </p>
+            <button class="button-popup1">Login</button>
+            <h3>NOTE: Please be login to see more pages</h3>
+    
+
+    </div>
+    <div class="one">
+        <span class="back"><ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="two">
+                <h2>Login</h2>
+                <form name="myform" method="post" onsubmit="return validpassword()" action="about.html">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="password" name="pass1"    required >
+                        <label>Username </label>   
+                    </div><br>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" name="pass2" required>
+                        <label>Password</label>
+   
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password</a>
+                    </div>
+                    <!--<a href="Contact-p-1/about.html" class="btn">Login</a>-->
+                    <input class="btn" type="submit" value="login">
+                    <p class="note">Note: username and password must be same</p>
+                    <div class="login">
+                        <p>Don't have an account?</p>
+                        <a href="#" >Register</a>
+                    </div>
+                </form>
+                <script>
+                    function validpassword(){
+                        var password=document.myform.pass1.value;
+                        var cpassword=document.myform.pass2.value;
+                        if (password.length <6){
+                            alert("password must contain 6 characters");
+                            return false;
+                        }
+                        if (password==cpassword){
+                            return true;
+                        }
+                        else{
+                            alert("password and confirm password must be same")
+                            return false;
+                        }
+                    }
+                </script>
+                
+        </div>
+        <div>
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/iPyg-QknNeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="script/script.js"> </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    var temp = document.getElementById("preloader1");
+    window.addEventListener("load",function(){
+        temp.style.display ="none";
+    })
+</script>
+</body>
+</html>
